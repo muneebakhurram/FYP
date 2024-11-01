@@ -1,0 +1,137 @@
+.booking-form-container {
+    background-color: white;
+    padding: 20px;
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-card {
+    background-color: #EBEBEB;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+.back-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Add some space between buttons */
+    transition: background-color 0.3s; /* Smooth transition for the background color */
+}
+
+.back-button:hover {
+    background-color: lightgrey; /* Change background color on hover */
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}.booking-form-container {
+    background-color: white;
+    padding: 20px;
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-card {
+    background-color: #EBEBEB;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+.back-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Add some space between buttons */
+    transition: background-color 0.3s; /* Smooth transition for the background color */
+}
+
+.back-button:hover {
+    background-color: lightgrey; /* Change background color on hover */
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}

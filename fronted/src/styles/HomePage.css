@@ -10,6 +10,7 @@ body {
   padding: 0;
 }
 
+
 .service-container {
   display: flex;
   justify-content: space-between;
@@ -19,12 +20,14 @@ body {
   height: calc(100vh - 80px); 
   margin: 0; 
   position: relative; 
+
 }
 
 .text-section {
   max-width: 50%;
   text-align: left;
   position: relative; 
+  margin-left: 3%;
   z-index: 2; 
 }
 
@@ -48,56 +51,33 @@ body {
   margin-bottom: 10px; 
 }
 
-.sign-up-btn {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 25px; 
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem; 
-  transition: background-color 0.3s ease;
-  margin-bottom: 15px; 
-}
 
-.sign-up-btn:hover {
-  background-color: #0056b3;
-}
-
-.login-text {
-  font-size: 1rem; 
-  color: #333;
-}
-
-.login-text a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.login-text a:hover {
-  text-decoration: underline;
-}
 
 .image-section {
-  position: relative;
-  width: 45%;
-  text-align: right;
+position: relative;
+width: 40%; 
+text-align: center;
+margin-left: 3%;
 }
 
+
 .background-decore {
-  position: absolute;
-  left: 0;
-  width: 105%;
-  height: 500px; 
-  z-index: 1; 
-  margin-top: 0.2px; 
+position: absolute;
+width: 75%; 
+height: auto;
+top: 2%;
+left: 12%; 
+z-index: 1; 
+opacity: 0.4; 
 }
 
 .main-pic {
-  position: relative;
-  width: 100%;
-  z-index: 2;
+position: relative;
+width: 70%; 
+z-index: 2;
 }
+
+
 
 @media (max-width: 1024px) {
   .service-container {
@@ -130,115 +110,350 @@ body {
       width: 100%; 
   }
 }
-
 /* Services Section */
 .services-section {
   padding: 40px 50px; 
 }
 
 .services-heading {
-  text-align: center;
+  text-align: center; 
   font-size: 2rem; 
-  margin-bottom: 20px;
-}
-
-.line-image {
-  display: block;
-  margin: 0 auto; 
+  color: #333; 
+  margin-bottom: 20px; 
 }
 
 .services-boxes {
   display: flex;
-  justify-content: space-around; 
+  justify-content: center; 
+  gap: 20px; 
 }
 
 .service-box {
-  text-align: center;
-  width: 30%; 
+
+  padding: 20px; 
+ 
+  text-align: center; 
+  cursor: pointer; 
 }
 
-.service-image {
-  width: 100%; 
-  max-width: 150px; 
-  margin-bottom: 10px; 
+.service-box:hover {
+  
+  box-shadow: 0 4px 15px rgb(187, 213, 248); 
 }
 
 .service-text {
-  font-size: 1.2rem; 
+  font-weight: bold; 
+  color: #333; 
+  margin-top: 10px; 
 }
 
-/* Quote Section */
+service-image {
+  width: 30px; 
+  height: auto; 
+  margin-bottom: 10px; 
+}
+
 .quote-section {
-  display: flex;
-  justify-content: space-between; 
-  padding: 40px 50px; 
+  height: 397px;
+  position: relative;
+  width: 100px;
 }
 
-.quote-contents {
-  width: 60%; 
+.quote-section .quote-contents {
+  align-items: flex-start; 
+  height: 250px;
+  left: 161px;
+  position: relative;
+  align-items: start;
+  top: 64px;
+  width: 520px;
 }
 
-.why-our-customers {
-  font-size: 1.5rem; 
-  font-weight: bold; 
-}
+.quote-section .texts {
+  height: 250px;
+  
+  
 
-.text-wrapper {
-  margin-top: 20px; 
+  width: 412px;
 }
-
-/* About Section */
-.about-section {
-  display: flex;
-  padding: 40px 50px; 
-}
-
-.images {
-  width: 50%; 
-}
-
-.overlap-group {
-  position: relative; 
-}
-
-.image {
+/* why choose us */
+.quote-section .frame {
+  height: 68px;
   position: absolute;
-  width: 100%; 
-  top: 0; 
-  left: 0; 
+  top: 0;
+  width: 412px;
 }
 
-.overlap {
-  width: 50%; 
-  padding-left: 20px; 
+.quote-section .why-our-customers {
+  align-items: start;
+  color: #111c15;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 43.2px;
+  position: absolute;
+  top: -1px;
+  width: 542px;
 }
 
-.about-contents {
+.quote-section .text-wrapper {
+  color: #111c15;
+  font-size: 15px;
+  font-weight: 400;
+  left: 0;
+  line-height: 22.5px;
+ position: relative;
+  top: 91px;
+  width: 476px;
+}
+
+.quote-section .image {
+  background-image: url(../assests/images/whycutomerchooseus.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 345px;
+  left: 869px;
+  position: absolute;
+  top: 16px;
+  width: 344px;
+}
+/* about */
+.about-section {
+  height: 564px;
+  position: relative;
+  width: 100px;
+}
+
+.about-section .images {
+  height: 452px;
+  left: 193px;
+  position: absolute;
+  top: 58px;
+  width: 274px;
+}
+
+.about-section .overlap-group {
+  height: 459px;
+  position: relative;
+}
+
+.about-section .image {
+  height: 296px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 274px;
+}
+
+.about-section .img {
+  height: 214px;
+  left: 43px;
+  object-fit: cover;
+  position: absolute;
+  top: 245px;
+  width: 188px;
+}
+
+.about-section .overlap {
+  height: 379px;
+  left: 591px;
+  position: absolute;
+  top: 65px;
+  width: 394px;
+}
+
+.about-section .about-contents {
+  height: 350px;
+  left: 0;
+  position: absolute;
+  top: 29px;
+  width: 394px;
+}
+
+.about-section .texts {
+  height: 278px;
+  position: relative;
+}
+
+.about-section .frame {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.about-section .div-wrapper {
+  height: 149px;
+  position: relative;
+  width: 394px;
+}
+
+.about-section .text-wrapper {
+  color: #666666;
+  font-family: "Be Vietnam Pro-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 27px;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  position: absolute;
+  top: 91px;
+  width: 366px;
+}
+
+.about-section .point {
+  height: 105px;
+  left: 47px;
+  position: absolute;
+  top: 173px;
+  width: 325px;
+}
+
+.about-section .div {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.about-section .frame-2 {
+  align-items: center;
+  align-self: stretch;
+  background-color: #f5f4f4;
+  border-radius: 3px;
   display: flex;
-  flex-direction: column; 
+  flex: 0 0 auto;
+  gap: 6px;
+  padding: 7.5px;
+  position: relative;
+  width: 100%;
 }
 
-.frame {
-  margin-bottom: 20px; 
-}
-
-.point {
+.about-section .frame-3 {
+  align-items: center;
   display: flex;
-  flex-wrap: wrap; 
+  flex: 1;
+  flex-grow: 1;
+  gap: 6px;
+  position: relative;
 }
 
-.frame-2, .frame-4, .frame-3, .frame-5, .frame-6 {
-  width: 50%; 
-  padding: 10px; 
+.about-section .text-wrapper-2 {
+  color: #111d15;
+  font-family: "Lato-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 14.4px;
+  margin-right: -28px;
+  margin-top: -0.75px;
+  position: relative;
+  width: 150px;
 }
 
-.text-wrapper-2, .text-wrapper-3, .text-wrapper-4, .text-wrapper-5, .text-wrapper-6 {
-  font-weight: bold; 
+.about-section .text-wrapper-3 {
+  color: #111d15;
+  font-family: "Lato-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 14.4px;
+  margin-top: -0.75px;
+  position: relative;
+  width: 122px;
 }
 
-/* Footer */
-footer {
-  background-color: #f8f9fa; 
-  padding: 20px; 
-  text-align: center; 
+.about-section .frame-4 {
+  align-items: center;
+  align-self: stretch;
+  background-color: #f5f4f4;
+  border-radius: 3px;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 6px;
+  justify-content: center;
+  padding: 7.5px;
+  position: relative;
+  width: 100%;
+}
+
+.about-section .text-wrapper-4 {
+  color: #111d15;
+  font-family: "Lato-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 14.4px;
+  margin-top: -0.75px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about-section .frame-5 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+  left: 194px;
+  position: absolute;
+  top: 0;
+}
+
+.about-section .text-wrapper-5 {
+  color: #111c15;
+  font-family: "Lato-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 14.4px;
+  margin-top: -0.75px;
+  position: relative;
+  width: 71px;
+}
+
+.about-section .frame-6 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #f5f4f4;
+  border-radius: 3px;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 6px;
+  padding: 7.5px;
+  position: relative;
+  width: 100%;
+}
+
+.about-section .text-wrapper-6 {
+  color: #111c15;
+  font-family: "Lato-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 14.4px;
+  margin-top: -0.75px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about-section .welcome-to-service {
+  color: #111c15;
+  font-family: "Be Vietnam Pro-SemiBold", Helvetica;
+  font-size: 29px;
+  font-weight: 600;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: 34.8px;
+  position: absolute;
+  text-align: center;
+  top: 0;
 }

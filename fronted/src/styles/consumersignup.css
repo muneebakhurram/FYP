@@ -1,71 +1,102 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the entire signup page */
 .vh-100 {
   height: 100vh;
 }
 
+/* Form Container */
+.form-container {
+  background-color: #ffffff; /* White background for form */
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+.form-outline {
+  margin-bottom: 1.5rem; /* Space between form fields */
+}
+
+.form-label {
+  margin-bottom: 0.5rem; /* Space between label and input */
+ 
+}
+
+.form-control {
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Space inside the input */
+  width: 100%; /* Full width */
+}
+
+/* Button Styles */
+.btn {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Space around text */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Error Message Styles */
 .error-message {
-  color: red;
-  font-size: 1.2rem;
+  color: red; /* Red text for errors */
+  margin: 0.5rem 0; /* Space above and below */
 }
 
 .success-message {
-  color: green;
-  font-size: 1.2rem;
+  color: green; /* Green text for success messages */
+  margin: 0.5rem 0; /* Space above and below */
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+/* Phone Input Styles */
+.phone-input {
+  display: flex;
+  align-items: center; /* Center items vertically */
 }
 
-.form-container {
-  background-color: white;
-  border-radius: 10px;
-  margin: auto;
+.phone-code {
+  width: 150px; /* Fixed width for country code dropdown */
+  margin-right: 10px; /* Space between dropdown and input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Space inside the dropdown */
 }
 
-.form-outline {
-  margin-bottom: 1.5rem;
+.phone-number {
+  flex: 1; /* Take the remaining space */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Space inside the input */
 }
 
-.btn-primary {
-  background-color: #007bff;
-  border: none;
-  padding: 0.75rem 1.25rem;
-  width: 100%; /* Match the button width to the input fields */
-}
-
-.text-center {
-  text-align: center;
-}
-
-.mt-3 {
-  margin-top: 1rem;
-}
-
+/* Registration Link Styles */
 .register-link {
-  color: #007bff;
-  text-decoration: none;
+  color: #007bff; /* Link color */
+  text-decoration: none; /* No underline */
 }
 
-.shadow {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.form-outline.mb-4 {
-  margin-bottom: 0rem !important; /* Reduced from 1.5rem to 1rem to move fields closer */
+.register-link:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
-
-/* Responsive adjustments */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .form-container {
-    padding: 20px;
+    padding: 20px; /* Reduce padding on smaller screens */
   }
 
-  .form-outline input {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-  }
-
-  .btn-primary {
-    font-size: 1rem; /* Adjust button font size for smaller screens */
+  .phone-code {
+    width: 100px; /* Reduce width of country code on smaller screens */
   }
 }

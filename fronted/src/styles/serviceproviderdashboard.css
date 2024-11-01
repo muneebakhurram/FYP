@@ -1,0 +1,153 @@
+/* Card Styles */
+.card-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-top: 20px;
+}
+
+.service-card {
+    width: 200px; /* Default width */
+    height: 300px; /* Default height */
+    border: 2px solid #333; /* Darker border color */
+    border-radius: 15px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Position for the button */
+    background-color: #f9f9f9; /* Background color */
+    margin-bottom: 10px; /* Space between card and service list */
+    margin-left: 20px; /* Add margin to the left to push the card right */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Slight shadow on hover for depth */
+}
+
+.add-service-button {
+    width: 60px; /* Adjust button size as needed */
+    height: 60px; /* Adjust button size as needed */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    background-color: #007bff; /* Button color */
+    color: white;
+    font-size: 24px; /* Size of plus icon */
+    position: absolute; /* Center the button */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centering */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.add-service-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translate(-50%, -50%) scale(1.1); /* Scale up on hover */
+}
+
+/* Service List Styles */
+.service-list {
+    display: flex;
+    flex-direction: column; /* Stack services vertically */
+}
+
+.service-item {
+    margin-top: 5px; /* Space between services */
+    padding: 10px;
+    border: 1px solid #ccc; /* Border for each service */
+    border-radius: 5px; /* Rounded corners for service items */
+    width: 100%; /* Make service items fill the available width */
+    background-color: #f0f0f0; /* Background color for services */
+}
+
+/* Service Container */
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px; 
+    border-radius: 10px;
+    height: calc(100vh - 80px); 
+    margin: 0; 
+    position: relative; 
+}
+
+.text-section {
+    max-width: 50%;
+    text-align: left;
+    position: relative; 
+    z-index: 2; 
+}
+
+.main-heading {
+    font-size: 2rem; 
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 15px; 
+    font-weight: 600;
+}
+
+.sub-heading {
+    font-size: 1rem; 
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.highlight-text {
+    font-size: 1rem; 
+    color: #666;
+    margin-bottom: 10px; 
+}
+
+.image-section {
+    position: relative;
+    width: 45%; /* Adjust width for better alignment */
+    text-align: right; /* Align images to the right */
+}
+
+.background-decore {
+    position: absolute;
+    left: 0;
+    width: 105%; /* Slightly larger to cover edges */
+    height: 500px; 
+    z-index: 1; 
+    margin-top: 0.2px; 
+}
+
+.main-pic {
+    position: relative;
+    width: 100%; /* Full width for the main image */
+    z-index: 2;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .service-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px; 
+        height: auto; 
+    }
+
+    .text-section, .image-section {
+        width: 100%; /* Full width for mobile */
+        text-align: center; /* Center text on mobile */
+    }
+
+    .main-heading {
+        font-size: 2rem; /* Responsive heading size */
+    }
+
+    .service-card {
+        width: 90%; /* Adjust card width for smaller screens */
+        margin-left: 0; /* Remove left margin on mobile */
+        margin-right: auto; /* Center card on mobile */
+        margin-bottom: 15px; /* Increase spacing between cards */
+    }
+
+    .background-decore {
+        top: 20px; 
+        width: 100%; /* Full width for mobile */
+    }
+}
